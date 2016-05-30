@@ -7,9 +7,9 @@
   width: 100%;
   min-width: $resMin;
   padding: 0 32px 0 40px;
-
+  transition: 250ms all ease-in-out;
   &.scrolled {
-    background-color: rgba(black, 0.85)
+    background-color: rgba(38, 50, 56, 0.9);
   }
 }
 

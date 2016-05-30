@@ -10,21 +10,21 @@
     'BlurAdmin.pages.components.timeline',
     'BlurAdmin.pages.components.tree',
   ])
-      .config(routeConfig);
+      // .config(routeConfig);
 
   /** @ngInject */
-  function routeConfig($stateProvider) {
-    $stateProvider
-        .state('components', {
-          url: '/components',
-          template : '<ui-view></ui-view>',
-          abstract: true,
-          title: 'Components',
-          sidebarMeta: {
-            icon: 'ion-gear-a',
-            order: 100,
-          },
-        });
-  }
+  // function routeConfig($stateProvider) {
+  //   $stateProvider
+  //       .state('components', {
+  //         url: '/components',
+  //         template : '<ui-view></ui-view>',
+  //         abstract: true,
+  //         title: 'Components',
+  //         sidebarMeta: {
+  //           icon: 'ion-gear-a',
+  //           order: 100,
+  //         },
+  //       });
+  // }
 
 })();

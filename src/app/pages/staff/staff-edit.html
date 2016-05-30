@@ -1,0 +1,478 @@
+<div ba-panel ba-panel-class="profile-page">
+  <div class="panel-content">
+    <!-- <div class="progress-info">Your profile is 70% Complete</div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-primary progress-bar-striped active" role="progressbar"
+           aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+      </div>
+    </div> -->
+
+    <h3 class="with-line">General Information</h3>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row clearfix">
+          <label for="inputFirstName" class="col-sm-3 control-label">Picture</label>
+
+          <div class="col-sm-9">
+            <div class="userpic">
+              <div class="userpic-wrapper">
+                <img ng-src="{{ picture }}" ng-click="uploadPicture()">
+              </div>
+              <i class="ion-ios-close-outline" ng-click="removePicture()" ng-if="!noPicture"></i>
+              <a href class="change-userpic" ng-click="uploadPicture()">Change Profile Picture</a>
+              <input type="file" ng-show="false" id="uploadFile" ng-file-select="onFileSelect($files)">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6"></div>
+    </div>
+
+    <div class="row">
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">First Name</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="" value="Devin">
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Last Name</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="" value="Cook">
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Home Phone</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="" value="778-235-7456">
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Mobile Phone</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="" value="">
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Email</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="" value="devinc@phoenixrestorations.com">
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">City</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="" value="123 Fake St.">
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Address 1</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="" value="123 Fake St.">
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Address 2</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="" value="">
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Postal Code</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="" value="G5T 2V4">
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Birthday</label>
+        <div class="col-md-3">
+          <div class="input-group">
+
+            <input type="text" class="form-control" uib-datepicker-popup="dd-MMMM-yyyy" ng-model="dt" is-open="popup1.opened" datepicker-options="dateOptions" close-text="Close" alt-input-formats="altInputFormats"/>
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="open1()">
+                <i class="glyphicon glyphicon-calendar"></i>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="with-line">Employment Information</h3>
+
+    <div class="row">
+      <div class="form-group col-md-6 clearfix">
+        <label class="col-sm-3 control-label">Department</label>
+
+        <div class="col-sm-9">
+          <select class="form-control" selectpicker>
+            <option>Accounting</option>
+            <option>Administration</option>
+            <option>Content Processing</option>
+            <option>Construction</option>
+            <option>Water</option>
+            <option>Scoping</option>
+            <option>Warehouse</option>
+            <option>Marketing</option>
+            <option>Project Manager</option>
+            <option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Title</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="" value="Front End Developer">
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Extention</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="" value="105">
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Email</label>
+
+        <div class="col-sm-9">
+          <input type="text" class="form-control" id="inputFirstName" placeholder="" value="test@phoenixrestorations.com">
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Hire Date</label>
+        <div class="col-md-3">
+          <div class="input-group">
+
+            <input type="text" class="form-control" uib-datepicker-popup="dd-MMMM-yyyy" ng-model="dt" is-open="popup1.opened" datepicker-options="dateOptions" close-text="Close" alt-input-formats="altInputFormats"/>
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="open1()">
+                <i class="glyphicon glyphicon-calendar"></i>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-group clearfix col-md-6">
+        <label for="inputFirstName" class="col-sm-3 control-label">Departure Date</label>
+        <div class="col-md-3">
+          <div class="input-group">
+
+            <input type="text" class="form-control" uib-datepicker-popup="dd-MMMM-yyyy" ng-model="dt" is-open="popup1.opened" datepicker-options="dateOptions" close-text="Close" alt-input-formats="altInputFormats"/>
+            <span class="input-group-btn">
+              <button type="button" class="btn btn-default" ng-click="open1()">
+                <i class="glyphicon glyphicon-calendar"></i>
+              </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="with-line">Credentials</h3>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row clearfix">
+          <label for="inputPassword" class="col-sm-3 control-label">Username</label>
+
+          <div class="col-sm-9">
+            <input type="text" class="form-control" id="inputPassword" placeholder="" value="dcook">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="col-md-6 form-group row clearfix">
+          <label class="checkbox-inline custom-checkbox nowrap">
+            <input type="checkbox" ng-model="generatePassword">
+            <span class="select-all-label">Generate Password via Email</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="form-group row clearfix">
+          <label for="inputPassword" class="col-sm-3 control-label">Password</label>
+
+          <div class="col-sm-9">
+            <input type="password" class="form-control" id="inputPassword" placeholder="" value="" ng-disabled="generatePassword">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group row clearfix">
+          <label for="inputConfirmPassword" class="col-sm-3 control-label">Confirm Password</label>
+
+          <div class="col-sm-9">
+            <input type="password" class="form-control" id="inputConfirmPassword" placeholder="" ng-disabled="generatePassword">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 bold-text">
+        <p ng-if="!generatePassword">
+          <strong>Passwords must be 8 characters long and contain one uppercase character, one number and one special character.</strong>
+        </p>
+        <p ng-if="generatePassword">
+          <strong>Generate Password will send an email to the user with which they can enter a new password.</strong>
+        </p>
+      </div>
+
+      <div class="col-md-12">
+        <div class="col-md-6 form-group row clearfix">
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="with-line">Emergency Contacts</h3>
+    <div class="col-md-12 form-group row clearfix">
+      <button type="button" class="btn btn-primary">Add Contact</button>
+    </div>
+    <table class="table table-hover" st-table="editableTableData">
+      <tr class="sortable header-row">
+        <th class="table-id" st-sort="id" st-sort-default="true">#</th>
+        <th st-sort="firstName">First Name</th>
+        <th st-sort="lastName">Last Name</th>
+        <th st-sort="username">Username</th>
+        <th st-sort="email">Email</th>
+        <th st-sort="age">Age</th>
+      </tr>
+      <tr ng-repeat="item in editableTableData" class="editable-tr-wrap">
+        <td class="table-id">{{item.id}}</td>
+        <td>
+          <span editable-text="item.firstName" blur="cancel">{{item.firstName}}</span>
+        </td>
+        <td>
+          <span editable-text="item.lastName" blur="cancel">{{item.lastName}}</span>
+        </td>
+        <td>
+          <span editable-text="item.username" blur="cancel">{{item.username}}</span>
+        </td>
+        <td>
+          <a class="email-link" ng-href="mailto:{{item.email}}">{{item.email}}</a>
+        </td>
+        <td>
+          <span editable-text="item.age" blur="cancel">{{item.age}}</span>
+        </td>
+      </tr>
+    </table>
+
+    <h3 class="with-line">Access Levels</h3>
+
+    <div class="row">
+      <div class="col-md-3">
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Customer Service</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Estimator</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Quality Control</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Sales Marketing Unit</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Warehouse Manager</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Administrator</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Power User</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">First Aid</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Scope Writer</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Data Editor</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Data Entry</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Project Coordinator</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Receptionist</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Technical Assistant</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Accounting</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Super User</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Project Manager</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Assistant Fire Captain</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">View/Edit Client Data</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Department Manager</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Project Manager Assistant</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Sales and Marketing</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Trade Access</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Accounts Payable</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Manager</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Fire Captain</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Fire Director</span>
+          </label>
+        </div>
+        <div class="col-md-12 form-group">
+          <label class="custom-checkbox nowrap">
+            <input type="checkbox">
+            <span class="select-all-label">Data Editor (Can Delete)</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="clearfix"></div>
+      <button type="button" class="btn btn-primary btn-with-icon save-profile">
+        <i class="ion-android-checkmark-circle"></i>Update Profile
+      </button>
+    </div>
+  </div>

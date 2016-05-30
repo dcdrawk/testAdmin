@@ -18,21 +18,21 @@
     'BlurAdmin.pages.ui.slider',
     'BlurAdmin.pages.ui.panels',
   ])
-      .config(routeConfig);
+      // .config(routeConfig);
 
   /** @ngInject */
-  function routeConfig($stateProvider) {
-    $stateProvider
-        .state('ui', {
-          url: '/ui',
-          template : '<ui-view></ui-view>',
-          abstract: true,
-          title: 'UI Features',
-          sidebarMeta: {
-            icon: 'ion-android-laptop',
-            order: 200,
-          },
-        });
-  }
+  // function routeConfig($stateProvider) {
+  //   $stateProvider
+  //       .state('ui', {
+  //         url: '/ui',
+  //         template : '<ui-view></ui-view>',
+  //         abstract: true,
+  //         title: 'UI Features',
+  //         sidebarMeta: {
+  //           icon: 'ion-android-laptop',
+  //           order: 200,
+  //         },
+  //       });
+  // }
 
 })();

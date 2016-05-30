@@ -11,21 +11,21 @@
       'BlurAdmin.pages.charts.chartist',
       'BlurAdmin.pages.charts.morris'
   ])
-      .config(routeConfig);
+      // .config(routeConfig);
 
   /** @ngInject */
-  function routeConfig($stateProvider) {
-    $stateProvider
-        .state('charts', {
-          url: '/charts',
-          abstract: true,
-          template: '<div ui-view></div>',
-          title: 'Charts',
-          sidebarMeta: {
-            icon: 'ion-stats-bars',
-            order: 150,
-          },
-        });
-  }
+  // function routeConfig($stateProvider) {
+  //   $stateProvider
+  //       .state('charts', {
+  //         url: '/charts',
+  //         abstract: true,
+  //         template: '<div ui-view></div>',
+  //         title: 'Charts',
+  //         sidebarMeta: {
+  //           icon: 'ion-stats-bars',
+  //           order: 150,
+  //         },
+  //       });
+  // }
 
 })();

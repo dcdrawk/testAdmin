@@ -13,21 +13,37 @@
   };
 
   // main functional color scheme
+  // var colorScheme = {
+  //   primary: '#209e91',
+  //   info: '#2dacd1',
+  //   success: '#90b900',
+  //   warning: '#dfb81c',
+  //   danger: '#e85656',
+  // };
+
   var colorScheme = {
-    primary: '#209e91',
-    info: '#2dacd1',
-    success: '#90b900',
-    warning: '#dfb81c',
-    danger: '#e85656',
+    primary: '#FF9800',
+    info: '#FFC107',
+    success: '#8BC34A',
+    warning: '#FF7043',
+    danger: '#e53935',
   };
 
   // dashboard colors for charts
+  // var dashboardColors = {
+  //   blueStone: '#005562',
+  //   surfieGreen: '#0e8174',
+  //   silverTree: '#6eba8c',
+  //   gossip: '#b9f2a1',
+  //   white: '#10c4b5',
+  // };
+
   var dashboardColors = {
-    blueStone: '#005562',
-    surfieGreen: '#0e8174',
-    silverTree: '#6eba8c',
-    gossip: '#b9f2a1',
-    white: '#10c4b5',
+    blueStone: '#E65100',
+    surfieGreen: '#F57C00',
+    silverTree: '#FFA726',
+    gossip: '#FFC107',
+    white: '#F57F17',
   };
 
   angular.module('BlurAdmin.theme')
