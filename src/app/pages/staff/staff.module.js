@@ -23,9 +23,9 @@
         })
         .state('staff.list', {
           url: '/list',
-          templateUrl: 'app/pages/staff/staff-edit.html',
-          title: 'List',
-          controller: 'StaffEditCtrl',
+          templateUrl: 'app/pages/staff/staff-list.html',
+          title: 'Staff List',
+          controller: 'StaffListCtrl',
           sidebarMeta: {
             order: 0,
           },
@@ -33,7 +33,7 @@
         .state('staff.edit', {
           url: '/edit',
           templateUrl: 'app/pages/staff/staff-edit.html',
-          title: 'Add New',
+          title: 'New Staff',
           controller: 'StaffEditCtrl',
           sidebarMeta: {
             order: 1,

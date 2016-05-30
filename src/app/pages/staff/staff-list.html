@@ -1,0 +1,38 @@
+<div ba-panel ba-panel-class="list-page">
+  <div class="table-responsive">
+    <table class="table table-hover">
+      <thead>
+        <tr class="black-muted-bg">
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Username</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th class="button-column"></th>
+        </tr>
+      </thead>
+      <tr ng-repeat="staff in staffList">
+        <td>{{staff.firstName}}</td>
+        <td>{{staff.lastName}}</td>
+        <td>{{staff.username}}</td>
+        <td>{{staff.email}}</td>
+        <td>{{staff.age}}</td>
+        <td class="button-column">
+          <div class="btn-group" uib-dropdown>
+            <button type="button" class="btn more-button" uib-dropdown-toggle>
+              <i class="ion-android-more-horizontal"></i>
+            </button>
+            <ul uib-dropdown-menu class="pull-right">
+              <li><a href>Action</a></li>
+              <li><a href>Another action</a></li>
+              <li><a href>Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href>Separated link</a></li>
+            </ul>
+          </div>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+</div>
