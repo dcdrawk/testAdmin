@@ -17,7 +17,7 @@
           title: 'Accounting',
           abstract: true,
           sidebarMeta: {
-            icon: 'fa fa-usd',
+            icon: 'account_balance',
             order: 3,
           },
         })

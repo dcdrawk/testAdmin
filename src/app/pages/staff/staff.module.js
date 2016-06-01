@@ -17,7 +17,7 @@
           title: 'Staff',
           abstract: true,
           sidebarMeta: {
-            icon: 'ion-android-people',
+            icon: 'group',
             order: 1,
           },
         })
@@ -33,7 +33,7 @@
         .state('staff.edit', {
           url: '/edit',
           templateUrl: 'app/pages/staff/staff-edit.html',
-          title: 'New Staff`',
+          title: 'New Staff',
           controller: 'StaffEditCtrl',
           sidebarMeta: {
             order: 1,

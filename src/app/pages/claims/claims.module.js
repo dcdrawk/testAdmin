@@ -17,7 +17,7 @@
           title: 'Claims',
           abstract: true,
           sidebarMeta: {
-            icon: 'ion-document',
+            icon: 'description',
             order: 2,
           },
         })

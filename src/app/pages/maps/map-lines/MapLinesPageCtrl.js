@@ -20,7 +20,7 @@
         type: 'map',
         theme: 'blur',
         dataProvider: {
-          map: 'worldLow',
+          map: 'canadaLow',
           linkToObject: 'london',
           images: [ {
             id: 'london',

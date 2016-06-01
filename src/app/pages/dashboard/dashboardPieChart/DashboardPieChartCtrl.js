@@ -13,24 +13,24 @@
     var pieColor = baUtil.hexToRGB(baConfig.colors.defaultText, 0.2);
     $scope.charts = [{
       color: pieColor,
-      description: 'New Visits',
-      stats: '57,820',
-      icon: 'person',
-    }, {
-      color: pieColor,
-      description: 'Purchases',
-      stats: '$ 89,745',
-      icon: 'money',
+      description: 'New Claims',
+      stats: '5',
+      icon: 'description',
     }, {
       color: pieColor,
       description: 'Active Users',
-      stats: '178,391',
-      icon: 'face',
+      stats: '7',
+      icon: 'person',
     }, {
       color: pieColor,
-      description: 'Returned',
-      stats: '32,592',
-      icon: 'refresh',
+      description: 'Monthly Overhead',
+      stats: '$ 178,391',
+      icon: 'money_off',
+    }, {
+      color: pieColor,
+      description: 'Monthly Profit',
+      stats: '$ 215,542',
+      icon: 'attach_money',
     }
     ];
 
@@ -39,26 +39,26 @@
     }
 
     function loadPieCharts() {
-      $('.chart').each(function () {
-        var chart = $(this);
-        chart.easyPieChart({
-          easing: 'easeOutBounce',
-          onStep: function (from, to, percent) {
-            $(this.el).find('.percent').text(Math.round(percent));
-          },
-          barColor: chart.attr('rel'),
-          trackColor: 'rgba(0,0,0,0)',
-          size: 84,
-          scaleLength: 0,
-          animation: 2000,
-          lineWidth: 9,
-          lineCap: 'round',
-        });
-      });
-
-      $('.refresh-data').on('click', function () {
-        updatePieCharts();
-      });
+      // $('.chart').each(function () {
+      //   var chart = $(this);
+      //   chart.easyPieChart({
+      //     easing: 'easeOutBounce',
+      //     onStep: function (from, to, percent) {
+      //       $(this.el).find('.percent').text(Math.round(percent));
+      //     },
+      //     barColor: chart.attr('rel'),
+      //     trackColor: 'rgba(0,0,0,0)',
+      //     size: 84,
+      //     scaleLength: 0,
+      //     animation: 2000,
+      //     lineWidth: 9,
+      //     lineCap: 'round',
+      //   });
+      // });
+      //
+      // $('.refresh-data').on('click', function () {
+      //   updatePieCharts();
+      // });
     }
 
     function updatePieCharts() {
@@ -67,9 +67,9 @@
       });
     }
 
-    $timeout(function () {
-      loadPieCharts();
-      updatePieCharts();
-    }, 1000);
+    // $timeout(function () {
+    //   loadPieCharts();
+    //   updatePieCharts();
+    // }, 1000);
   }
 })();

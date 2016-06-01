@@ -16,7 +16,7 @@
           templateUrl: 'app/pages/dashboard/dashboard.html',
           title: 'Dashboard',
           sidebarMeta: {
-            icon: 'ion-android-home',
+            icon: 'home',
             order: 0,
           },
         });

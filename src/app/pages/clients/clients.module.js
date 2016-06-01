@@ -17,7 +17,7 @@
           title: 'Clients',
           abstract: true,
           sidebarMeta: {
-            icon: 'ion-android-person',
+            icon: 'person',
             order: 0,
           },
         })

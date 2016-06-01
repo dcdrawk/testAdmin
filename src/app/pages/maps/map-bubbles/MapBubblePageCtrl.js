@@ -456,7 +456,7 @@
     map.pathToImages = layoutPaths.images.amMap;
 
     var dataProvider = {
-      mapVar: AmCharts.maps.worldLow,
+      mapVar: AmCharts.maps.canadaLow,
       images: []
     };
 

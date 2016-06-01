@@ -17,7 +17,7 @@
           title: 'Scoping',
           abstract: true,
           sidebarMeta: {
-            icon: 'fa fa-crosshairs',
+            icon: 'location_searching',
             order: 2,
           },
         })

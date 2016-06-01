@@ -18,7 +18,7 @@
           controller: 'TablesPageCtrl',
           title: 'Tables',
           sidebarMeta: {
-            icon: 'ion-grid',
+            icon: 'grid_on',
             order: 300,
           },
         }).state('tables.basic', {

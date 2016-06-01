@@ -5,19 +5,19 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.customers', [])
+  angular.module('BlurAdmin.pages.companies', [])
       .config(routeConfig);
 
   /** @ngInject */
   function routeConfig($stateProvider) {
     $stateProvider
-        .state('customers', {
-          url: '/customers',
+        .state('companies', {
+          url: '/companies',
           template : '<ui-view></ui-view>',
-          title: 'Customers',
+          title: 'Companies',
           abstract: true,
           sidebarMeta: {
-            icon: 'ion-ios-people',
+            icon: 'business',
             order: 3,
           },
         })

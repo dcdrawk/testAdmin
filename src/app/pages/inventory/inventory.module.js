@@ -17,7 +17,7 @@
           title: 'Inventory',
           abstract: true,
           sidebarMeta: {
-            icon: 'ion-cube',
+            icon: 'drafts',
             order: 6,
           },
         })

@@ -17,7 +17,7 @@
           title: 'Subcontractors',
           abstract: true,
           sidebarMeta: {
-            icon: 'ion-settings',
+            icon: 'build',
             order: 7,
           },
         })

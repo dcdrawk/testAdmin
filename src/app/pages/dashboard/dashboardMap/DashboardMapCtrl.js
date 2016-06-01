@@ -9,7 +9,39 @@
       .controller('DashboardMapCtrl', DashboardMapCtrl);
 
   /** @ngInject */
-  function DashboardMapCtrl(baConfig, layoutPaths) {
+  function DashboardMapCtrl($scope, baConfig, layoutPaths, $timeout) {
+    var layoutColors = baConfig.colors;
+    $scope.colors = [layoutColors.primary, layoutColors.warning, layoutColors.danger, layoutColors.info, layoutColors.success, layoutColors.primaryDark];
+    $scope.lineData = [
+      {y: "2016-01", a: 15, b: 17},
+      {y: "2016-02", a: 7, b: 9},
+      {y: "2016-03", a: 12, b: 10},
+      {y: "2016-04", a: 6, b: 8},
+      {y: "2016-05", a: 9, b: 10}
+    ];
+
+    function initialize() {
+      var mapCanvas = document.getElementById('google-maps');
+      var myLatLng = {lat: 49.2066114, lng: -122.8240075};
+      var mapOptions = {
+        center: new google.maps.LatLng(myLatLng.lat, myLatLng.lng),
+        zoom: 10,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+      };
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+
+      var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'Hello World!'
+      });
+    }
+
+    $timeout(function(){
+      initialize();
+    }, 100);
+
+
     var layoutColors = baConfig.colors;
     var map = AmCharts.makeChart('amChartMap', {
       type: 'map',
@@ -17,11 +49,12 @@
       zoomControl: { zoomControlEnabled: false, panControlEnabled: false },
 
       dataProvider: {
-        map: 'worldLow',
-        zoomLevel: 3.5,
-        zoomLongitude: 10,
-        zoomLatitude: 52,
+        map: 'canadaLow',
+        zoomLevel: 5,
+        zoomLongitude: -125,
+        zoomLatitude: 55,
         areas: [
+          { title: 'British Columbia', id: 'BC', color: layoutColors.primary, customData: '1 244', groupId: '1'},
           { title: 'Austria', id: 'AT', color: layoutColors.primary, customData: '1 244', groupId: '1'},
           { title: 'Ireland', id: 'IE', color: layoutColors.primary, customData: '1 342', groupId: '1'},
           { title: 'Denmark', id: 'DK', color: layoutColors.primary, customData: '1 973', groupId: '1'},

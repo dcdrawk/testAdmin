@@ -53,10 +53,10 @@
     ];
 
     var ctx = document.getElementById('chart-area').getContext('2d');
-    window.myDoughnut = new Chart(ctx).Doughnut($scope.doughnutData, {
-      segmentShowStroke: false,
-      percentageInnerCutout : 64,
-      responsive: true
-    });
+    // window.myDoughnut = new Chart(ctx).Doughnut($scope.doughnutData, {
+    //   segmentShowStroke: false,
+    //   percentageInnerCutout : 64,
+    //   responsive: true
+    // });
   }
 })();

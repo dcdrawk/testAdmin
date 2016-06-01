@@ -14,10 +14,10 @@
         .state('buildings', {
           url: '/buildings',
           template : '<ui-view></ui-view>',
-          title: 'Buildings',
+          title: 'Project Addresses',
           abstract: true,
           sidebarMeta: {
-            icon: 'fa fa-building-o',
+            icon: 'location_city',
             order: 6,
           },
         })
