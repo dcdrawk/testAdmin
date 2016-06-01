@@ -33,7 +33,7 @@
         .state('staff.edit', {
           url: '/edit',
           templateUrl: 'app/pages/staff/staff-edit.html',
-          title: 'New Staff',
+          title: 'New Staff`',
           controller: 'StaffEditCtrl',
           sidebarMeta: {
             order: 1,
