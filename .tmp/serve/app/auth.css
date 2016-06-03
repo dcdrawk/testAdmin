@@ -276,6 +276,9 @@ a {
 .irs-grid-text {
   color: #666666; }
 
+.align-middle {
+  vertical-align: middle; }
+
 .btn:focus, .btn:active:focus, .btn.active:focus,
 .btn.focus, .btn:active.focus, .btn.active.focus {
   outline: none; }
