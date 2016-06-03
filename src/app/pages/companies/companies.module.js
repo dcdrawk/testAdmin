@@ -21,17 +21,17 @@
             order: 3,
           },
         })
-        .state('customers.list', {
+        .state('companies.list', {
           url: '/list',
-          templateUrl: 'app/pages/claims/customers-edit.html',
+          templateUrl: 'app/pages/copmanies/copmanies-edit.html',
           title: 'List',
           sidebarMeta: {
             order: 0,
           },
         })
-        .state('customers.edit', {
+        .state('companies.edit', {
           url: '/edit',
-          templateUrl: 'app/pages/claims/customers-edit.html',
+          templateUrl: 'app/pages/copmanies/copmanies-edit.html',
           title: 'Add New',
           sidebarMeta: {
             order: 1,
