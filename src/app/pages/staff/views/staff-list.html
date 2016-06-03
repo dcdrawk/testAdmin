@@ -1,0 +1,12 @@
+<div ba-panel ba-panel-class="list-page">
+  <div class="row">
+    <div class="form-group col-md-2">
+      <input type="text" class="form-control" id="staffSearch" placeholder="Search Staff">
+    </div>
+    <div class="col-md-10">
+      <button type="button" class="btn btn-default pull-right" ng-click="advancedSearch = !advancedSearch">Show Advanced Search</button>
+    </div>
+  </div>
+  <div ng-if="advancedSearch" class="advanced-search-section row" ng-include="'app/pages/staff/views/staff-advanced-search.html'"></div>
+  <div ng-include="'app/pages/staff/views/staff-list-table.html'"></div>
+</div>

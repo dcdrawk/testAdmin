@@ -23,7 +23,7 @@
         })
         .state('staff.list', {
           url: '/list',
-          templateUrl: 'app/pages/staff/staff-list.html',
+          templateUrl: 'app/pages/staff/views/staff-list.html',
           title: 'Staff List',
           controller: 'StaffListCtrl',
           sidebarMeta: {
@@ -32,7 +32,7 @@
         })
         .state('staff.edit', {
           url: '/edit',
-          templateUrl: 'app/pages/staff/staff-edit.html',
+          templateUrl: 'app/pages/staff/views/staff-edit.html',
           title: 'New Staff',
           controller: 'StaffEditCtrl',
           sidebarMeta: {

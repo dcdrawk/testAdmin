@@ -505,6 +505,17 @@
       });
     };
 
+    $scope.selectRow = function(Staff) {
+      $uibModal.open({
+        animation: true,
+        controller: 'StaffListModalCtrl',
+        templateUrl: 'app/pages/staff/views/staff-list-modal.html',
+        size: 'md',
+      }).result.then(function() {
+        // item.href = link;
+      });
+    };
+
     // $scope.getFile = function() {
     //   fileReader.readAsDataUrl($scope.file, $scope)
     //     .then(function(result) {

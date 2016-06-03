@@ -341,10 +341,19 @@ th {
   padding-right: 0px !important;
   text-align: right;
   // float: right;
+  .btn-group.dropdown {
+    position: absolute;
+    right: 22px;
+  }
   .btn {
     border: none;
     background-color: #fff;
     border-radius: 0px;
+    width: 48px;
+    background-color: transparent;
+  }
+  i {
+    display: block;
   }
 }
 

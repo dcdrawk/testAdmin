@@ -47,7 +47,7 @@ $modal-input-border: #e7e7e7;
   .modal-header {
     border: none;
     .close{
-      margin-top: -5px;
+      margin-top: -2px;
     }
   }
   .modal-footer {
@@ -75,9 +75,13 @@ $modal-input-border: #e7e7e7;
   }
 }
 
-.modal-content .modal-header .modal-title{
-  color: $default-text;
+.modal-content .modal-header .modal-title,
+.modal-header i {
+  // color: $default-text;
+  color: #fff;
+  text-shadow: none;
 }
+
 
 .message-modal {
   .modal-header {

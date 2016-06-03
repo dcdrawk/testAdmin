@@ -279,6 +279,10 @@ a {
 .align-middle {
   vertical-align: middle; }
 
+hr {
+  margin-top: 0px;
+  margin-bottom: 10px; }
+
 .btn:focus, .btn:active:focus, .btn.active:focus,
 .btn.focus, .btn:active.focus, .btn.active.focus {
   outline: none; }

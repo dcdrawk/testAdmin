@@ -1,0 +1,91 @@
+<div class="modal-content">
+  <div class="modal-header bg-info">
+    <button type="button" class="close" ng-click="$dismiss()" aria-label="Close">
+      <i class="material-icons">close</i>
+    </button>
+    <h4 class="modal-title">Staff Info</h4>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="modal-pic">
+          <div class="userpic-wrapper">
+            <img ng-src="{{ picture }}" ng-click="uploadPicture()">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="control-label">First Name</label>
+          <p>Devin</p>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Title</label>
+          <p>Flood Technician</p>
+        </div>
+        <div class="form-group">
+          <label class="control-label">Email</label>
+          <p>
+            <a href="#">test@test.com</a>
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="control-label">First Name</label>
+          <p>Devin</p>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">Extension</label>
+          <p>123</p>
+        </div>
+
+        <div class="form-group">
+          <label class="control-label">Phone</label>
+          <p>555-555-5555</p>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <div class="row">
+
+          <div class="form-group col-md-6 clearfix">
+            <label class="control-label">Away Type</label>
+            <select class="form-control" selectpicker>
+              <option>- Select -</option>
+              <option>Sick</option>
+              <option>Vacation</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-6 clearfix">
+            <label class="control-label">Duration</label>
+            <select class="form-control" selectpicker>
+              <option>- Select -</option>
+              <option>1 Day</option>
+              <option>2 Day</option>
+              <option>3 Day</option>
+              <option>4 Day</option>
+              <option>5 Day</option>
+              <option>2 Weeks</option>
+              <option>3 Weeks</option>
+              <option>1 Month</option>
+            </select>
+          </div>
+
+          <div class="form-group col-md-12 clearfix">
+            <label class="control-label">Comments</label>
+            <textarea class="form-control"></textarea>
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+
+    <button type="button" class="btn btn-default" ng-click="$dismiss()">Close</button>
+  </div>
+</div>

@@ -5,33 +5,33 @@
 (function () {
   'use strict';
 
-  angular.module('BlurAdmin.pages.companies', [])
+  angular.module('BlurAdmin.pages.customers', [])
       .config(routeConfig);
 
   /** @ngInject */
   function routeConfig($stateProvider) {
     $stateProvider
-        .state('companies', {
-          url: '/companies',
+        .state('customers', {
+          url: '/customers',
           template : '<ui-view></ui-view>',
-          title: 'Companies',
+          title: 'Customers',
           abstract: true,
           sidebarMeta: {
-            icon: 'business',
-            order: 3,
+            icon: 'group',
+            order: 5,
           },
         })
-        .state('companies.list', {
+        .state('customers.list', {
           url: '/list',
-          templateUrl: 'app/pages/copmanies/copmanies-edit.html',
+          templateUrl: 'app/pages/claims/companies-edit.html',
           title: 'List',
           sidebarMeta: {
             order: 0,
           },
         })
-        .state('companies.edit', {
+        .state('customers.edit', {
           url: '/edit',
-          templateUrl: 'app/pages/copmanies/copmanies-edit.html',
+          templateUrl: 'app/pages/claims/companies-edit.html',
           title: 'Add New',
           sidebarMeta: {
             order: 1,

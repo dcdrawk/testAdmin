@@ -63,7 +63,11 @@ h3.with-line {
     }
   }
 }
-
+.modal-pic {
+  width: 100%;
+  min-height: 170px;
+  border: 1px dashed #b8b8b8;
+}
 .userpic {
   border: 1px dashed #b8b8b8;
   width: 202px;
@@ -231,4 +235,3 @@ a.sn-link {
     }
   }
 }
-
